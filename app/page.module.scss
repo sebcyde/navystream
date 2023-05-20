@@ -1,0 +1,97 @@
+@import '../styles/variables.scss';
+
+.Navbar {
+	background: $Navy;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px 20px;
+	max-width: 1440px;
+	margin: 0 auto;
+	color: white;
+	display: flex;
+
+	.LinkContainer {
+		justify-content: flex-start;
+		align-items: center;
+		display: flex;
+		width: 100%;
+
+		a {
+			margin: 0px 10px;
+
+			&:nth-of-type(1) {
+				margin-left: 50px;
+			}
+		}
+	}
+}
+
+.Container {
+	background-color: white;
+	max-width: 1440px;
+	margin: 0px auto;
+	height: 100%;
+
+	.LogoContainer {
+		border: 1px solid green;
+		flex-direction: column;
+		text-align: center;
+		width: fit-content;
+		margin: 20px auto;
+		font-size: 25px;
+		display: flex;
+		padding: 15px;
+	}
+
+	.ScrollContainer {
+		border-top: 1px solid white;
+		background: $Navy;
+		padding: 10px 0px;
+		overflow: hidden;
+		color: white;
+	}
+
+	.ScrollText {
+		/* animation properties */
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+
+		-moz-animation: my-animation 20s linear infinite;
+		-webkit-animation: my-animation 20s linear infinite;
+		animation: my-animation 20s linear infinite;
+	}
+
+	/* for Firefox */
+	@-moz-keyframes my-animation {
+		from {
+			-moz-transform: translateX(100%);
+		}
+		to {
+			-moz-transform: translateX(-100%);
+		}
+	}
+
+	/* for Chrome */
+	@-webkit-keyframes my-animation {
+		from {
+			-webkit-transform: translateX(100%);
+		}
+		to {
+			-webkit-transform: translateX(-100%);
+		}
+	}
+
+	@keyframes my-animation {
+		from {
+			-moz-transform: translateX(100%);
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+		}
+		to {
+			-moz-transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+html,
+body {
+	background-image: url(../public/images/gradient-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+	.LoadingContainer {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0px;
+}
+
+a:hover {
+	color: $LightBlue;
+	cursor: pointer;
+}
