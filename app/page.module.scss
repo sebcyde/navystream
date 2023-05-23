@@ -24,6 +24,15 @@
 			}
 		}
 	}
+
+	&.SignedOutNavbar {
+		a {
+			margin-left: auto;
+		}
+	}
+
+	&.SignedInNavbar {
+	}
 }
 
 .Container {

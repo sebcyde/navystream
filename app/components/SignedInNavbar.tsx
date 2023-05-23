@@ -1,8 +1,8 @@
 import styles from '../page.module.scss';
 
-export const Navbar = () => {
+export const SignedInNavbar = () => {
 	return (
-		<div className={styles.Navbar}>
+		<div className={`${styles.SignedInNavbar} ${styles.Navbar}`}>
 			<h2 className={styles.Logo}>NavyStream</h2>
 			<div className={styles.LinkContainer}>
 				<a>Example</a>
